@@ -1,0 +1,52 @@
+$Grayish-Blue: hsl(216, 30%, 68%);
+$Dark-Grayish-Violet: hsl(273, 4%, 51%);
+.social {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: url("./images/bg-pattern-footer-mobile.svg");
+  background-repeat: no-repeat;
+  position: relative;
+
+  .icons {
+    svg {
+      margin-right: 1rem;
+    }
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: calc(100% - 3rem);
+    height: 1px;
+    background-color: $Grayish-Blue;
+    transform: translateX(-50%);
+  }
+}
+
+.links {
+  text-transform: uppercase;
+  text-align: center;
+
+  h5 {
+    color: $Dark-Grayish-Violet;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+  }
+  ul {
+    padding-bottom: 3rem;
+    li {
+      font-weight: bold;
+      padding-bottom: 1rem;
+    }
+  }
+}
+path:hover {
+  fill: black;
+  cursor: pointer;
+}
